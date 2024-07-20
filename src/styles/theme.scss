@@ -1,0 +1,26 @@
+html.dark {
+  --bg-color: #2d3033;
+  --bg-c-color: rgb(20, 20, 20);
+  --text-color: #fff;
+  --icon-color: #cfd3dc;
+  --tab-color: #fff;
+}
+html:not(.dark) {
+  --bg-color: #f5f7f9;
+  --bg-c-color: #fff;
+  --text-color: #000;
+  --icon-color: #595959;
+  --tab-color: #595959;
+}
+.back-color {
+  background-color: var(--bg-color);
+  //   不是组件，大页面的背景
+}
+.text-color {
+  color: var(--text-color);
+  //   组件的文字的背景
+}
+.bg-c-color {
+  background-color: var(--bg-c-color);
+  //   组件的背景
+}

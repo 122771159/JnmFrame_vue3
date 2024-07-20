@@ -1,0 +1,53 @@
+@import './custom.scss';
+@import './color.scss';
+@import './flex.scss';
+@import './theme.scss';
+
+@import './margin-padding.scss';
+@import './other.scss';
+
+* {
+  // 清除默认的外边距和内边距
+  margin: 0;
+  padding: 0;
+  // 盒子模型：外边距（margin）+ border（边框） + 内边距（padding）+ content（内容）
+  box-sizing: border-box; // 设置之后padding和border的值就不会影响盒子大小(元素的宽高)，相当于把padding和border的值都算在content里
+  -webkit-tap-highlight-color: rgba(255, 255, 255, 0);
+  user-focus: none;
+  -moz-user-select: none;
+  user-select: none;
+}
+*::-webkit-scrollbar {
+  width: 0 !important;
+  height: 0 !important;
+}
+h5 {
+  font-size: 1.125rem;
+  margin-top: 0;
+  margin-bottom: 1rem;
+  font-weight: 500;
+  line-height: 1.1;
+  color: #566a7f;
+}
+h6 {
+  margin-top: 20px;
+  font-size: 12px;
+  color: #99a2aa;
+}
+.main-container {
+  height: 100%;
+  overflow: auto;
+}
+#app,
+html,
+body {
+  height: 100vh; // 页面满屏
+
+  overflow: hidden;
+}
+
+.view-div {
+  background-color: var(--bg-c-color);
+  border-radius: 8px;
+  padding: 20px 10px 30px 10px;
+}
